@@ -1,0 +1,148 @@
+html {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+ }
+ 
+body {
+  margin: 0px;
+  min-height: 100%;
+  width: 100%;
+  padding: 0;
+}
+
+.bg-dark{
+  background-color: #080808 !important;
+}
+
+.granite-red {
+  background-color: #75002f;
+}
+
+.red-hover :hover {
+  background-color: #75012E;
+}
+
+
+hr {
+  color:  #75012E;
+  border: 2px solid #75012E;
+  margin: auto;
+}
+
+
+.row {
+  margin-top: 15px;
+}
+
+.title-font{
+  font-family: 'Abril Fatface', cursive !important;
+  color: #d09412
+}
+
+.nav-link {
+  font-size: 1.1em;
+  color: #d09412 !important;
+}
+
+.nav-link:hover {
+	color:white !important;
+}
+
+.fit-logo-icon{
+	border-radius: 50%;
+	height: 100%;
+}
+
+
+
+.nav-link img:hover {
+  cursor: pointer;
+}
+
+/* Navigation bar <ul> alignment */
+.margin-right{
+  margin-right: auto;
+}
+
+@media screen and (min-width: 992px){
+  .margin-right{
+    margin-right:0%;
+  }
+}
+/* Navigation bar <ul> alignment */
+
+/* #bio_jumbotron {
+  background: url('./resources/main.JPG') no-repeat center center fixed;
+  background-size: cover !important;
+} */
+
+
+
+.jumbotron{
+  height: 30em;
+}
+
+
+
+
+
+.btn-danger {
+	color: #fff;
+	background-color: #75002f !important;
+	border-color: #75002f; /*set the color you want here*/
+	/* box-shadow: 1px #530122 !important; */
+  }
+  .btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active, .open>.dropdown-toggle.btn-danger {
+	color: #fff;
+	background-color: #530122 !important;
+	border-color: #530122 !important; /*set the color you want here*/
+  }
+
+
+  .btn-gold {
+    color: black;
+    background-color: #d09412 !important;
+    border-color: #75002f; /*set the color you want here*/
+    /* box-shadow: 1px #530122 !important; */
+    }
+    .btn-gold:hover, .btn-gold:focus, .btn-gold:active, .btn-gold.active, .open>.dropdown-toggle.btn-gold {
+    color: black;
+    background-color: #d09412 !important;
+    border-color: #530122 !important; /*set the color you want here*/
+    }
+
+
+
+
+
+
+.bg-image {
+  margin-top: 9vh;  
+  background-position: 0px -30vh; 
+}
+
+#multimedia-bg-img{
+  background-position: 0px 0vh ; 
+}
+
+
+
+@media screen and (max-width: 450px){
+  /* .bg-image {
+    margin-top: 0vh;  
+    background-position: 0px  -50px; 
+  } */
+
+  #multimedia-bg-img{
+    background-position: 0px 5vh ; 
+  }
+  /* #bio-bg-img {
+    background-position: 0px 5vh ;
+  } */
+}
+
+
+
+

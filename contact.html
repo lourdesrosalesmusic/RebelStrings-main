@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- MDB icon -->
+  <link rel="icon" href="img/tab-logo.png" type="image/x-icon" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+  <!-- MDB -->
+  <link rel="stylesheet" href="css/mdb.min.css" />
+
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./contact-style.css">
+
+  <script src="./form.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("uszj9LtkA0ytQ8LF2");
+      })();
+    </script>
+  
+
+  <title>Rebel Strings</title>
+</head>
+
+<body class="bg-dark text-light " page="contact">
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark " style="background-color:#000000;">
+      <!-- Container wrapper -->
+      <div class="container-fluid">
+
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="./index.html">
+          <img height="30" src="./img/navbar-logo.png" alt="">
+        </a>
+
+        <!-- Toggle button -->
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+          data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <!-- Link -->
+            <!-- <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li> -->
+
+          </ul>
+
+          <!-- navbar-nav d-flex me-auto mb-2 mb-lg-0 -->
+          <ul class="navbar-nav d-flex margin-right mb-2 mb-lg-0">
+            <li class="nav-item me-3 me-lg-0 align-right ">
+              <a class="nav-link text-end" href="about.html">About Us</i></a>
+            </li>
+            <li class="nav-item me-3 me-lg-0 align-right ">
+              <a class="nav-link text-end" href="services.html">Services</i></a>
+            </li>
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link text-end" href="multimedia.html">Multimedia</i></a>
+            </li>
+          
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link text-end" id="contact" href="./contact.html">Contact</i></a>
+            </li>
+            <ul class="navbar-nav langWrap">
+              <li class="nav-item me-3 me-lg-0" >
+                <a class="nav-link text-end lang"  language="spanish"><img src="./img/spain_icon.png" height="20" alt=""> </i></a>
+              </li>
+              <li class="nav-item me-3 me-lg-0 " >
+                <a class="nav-link text-end lang active " language="english" ><img src="./img/american_icon.png" height="20" alt=""> </i></a>
+              </li>
+            </ul>
+
+          </ul>
+
+        </div>
+      </div>
+      <!-- Container wrapper -->
+    </nav>
+    <!-- Background image -->
+    <div class="p-5 text-center bg-image"
+      style="background-image: url('./img/LR-Multemedia-3.jpg');height: 400px;margin-top: 58px;">
+      <!-- make rgba(0, 0, 0, 0.6) for opacity-->
+      <div class="mask" style="background-color: rgba(0, 0, 0, 0.0);">
+        <div class="d-flex justify-content-center align-items-center h-100">
+          <div class="text-white">
+            <!-- <h1 class="mb-3">Heading</h1>
+      <h4 class="mb-3">Subheading</h4>
+      <a class="btn btn-outline-light btn-lg" href="#!" role="button">Call to action</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Background image -->
+  </header>
+  <!-- Navbar -->
+
+
+  <div class="container">
+    <div class="row" style="display: flex; justify-content: center;">
+    <div class="col-10 ">
+      <h1>Contact Form</h1>
+      <div class="form-group">
+        <h5 for="name">Name</h5>
+        <input
+          type="text"
+          class="form-control"
+          id="name"
+          placeholder="Enter name"
+        />
+      </div>
+      <div class="form-group">
+        <h5 for="email">Email</h5>
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          placeholder="Enter email"
+        />
+      </div>
+      <div class="form-group">
+        <h5 for="message">Message</h5>
+        <textarea class="form-control" id="message" rows="3"></textarea>
+      </div>
+      <button class="btn btn-gold" onclick="sendMail()">Submit</button>
+    </div>
+  </div>
+
+  </div>
+   <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+
+
+
+  <!-- footer socials -->
+  <footer class=" text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/profile.php?id=61565660922657"
+          target="_blank" role="button"><i class="fab fa-facebook-f"></i></a>
+
+          <!-- Instagram -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/rebelstrings"
+          target="_blank" role="button"><i class="fab fa-instagram"></i></a>
+
+          <!-- Twitter -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.youtube.com/@RebelStringsEvents"
+          target="_blank" role="button">
+          <i class="fab fa-youtube"></i>
+          </a>
+
+        </section>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <!-- <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2023 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div> -->
+    <!-- Copyright -->
+  </footer>
+  <!-- footer -->
+
+  <!-- MDB -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Custom scripts -->
+  <script type="text/javascript"></script>
+  <script src="./js/translate.js"></script>
+</body>
+
+</html>

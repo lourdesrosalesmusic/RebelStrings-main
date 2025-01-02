@@ -1,0 +1,215 @@
+
+
+
+
+
+Navbar: 
+    
+    <!-- Navbar -->
+    <header >
+      <nav class="navbar navbar-expand-lg navbar-dark " style="background-color:#000000;">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+      
+          <!-- Navbar brand -->
+          <a class="navbar-brand" href="index.html">Brand</a>
+      
+          <!-- Toggle button -->
+          <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+      
+          <!-- Collapsible wrapper -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      
+              <!-- Link -->
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li> -->
+      
+            </ul>
+      
+            <!-- Icons d-flex flex-row me-1 -->
+            <ul class="navbar-nav d-flex me-auto mb-2 mb-lg-0">
+              <li class="nav-item me-3 me-lg-0">
+                <a class="nav-link" href="bio.html">bio</i></a>
+              </li>
+              <li class="nav-item me-3 me-lg-0">
+                <a class="nav-link" href="multimedia.html">multimedia</i></a>
+              </li>
+              <li class="nav-item me-3 me-lg-0">
+                <a class="nav-link" href="www.scifiensemble" target="_blank"> Scifi-Ensemble</i></a>
+              </li>
+              <li class="nav-item me-3 me-lg-0">
+                <a class="nav-link" href="contact.html">contact</i></a>
+              </li>
+              
+            </ul>
+      
+          </div>
+        </div>
+        <!-- Container wrapper -->
+      </nav>
+    </header>
+      <!-- Navbar -->    
+   
+   
+      
+footer:
+
+<!-- footer -->
+<footer class=" text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a
+          class="btn text-white btn-floating m-1"
+          style="background-color: #3b5998;"
+          href="#!"
+          role="button"
+          target="_blank"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+  
+        <!-- Twitter -->
+        <a
+          class="btn text-white btn-floating m-1"
+          style="background-color: #55acee;"
+          href="#!"
+          role="button"
+          target="_blank"
+          ><i class="fab fa-twitter"></i
+        ></a>
+  
+        <!-- Google -->
+        <a
+          class="btn text-white btn-floating m-1"
+          style="background-color: #dd4b39;"
+          href="#!"
+          role="button"
+          target="_blank"
+          ><i class="fab fa-google"></i
+        ></a>
+  
+        <!-- Instagram -->
+        <a
+          class="btn text-white btn-floating m-1"
+          style="background-color: #ac2bac;"
+          href="#!"
+          role="button"
+          target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+  
+        <!-- Linkedin -->
+        <a
+          class="btn text-white btn-floating m-1"
+          style="background-color: #0082ca;"
+          href="#!"
+          role="button"
+          target="_blank"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <!-- Github -->
+        <a
+          class="btn text-white btn-floating m-1"
+          style="background-color: #333333;"
+          href="#!"
+          role="button"
+          target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <!-- <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2023 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div> -->
+    <!-- Copyright -->
+  </footer>
+<!-- footer -->
+
+
+contact 
+<div class="container justify-content-center ">
+  <div class="row">
+    <!-- <div class="col-md-5">
+              <img id="contact_img"src="./resources/main.JPG" alt="IMG">	
+          </div> -->
+    <!--col-->
+    <div class="col-md-12 ">
+      <h2 class="form-title text-center">Contact Me</h2>
+      <!-- <p class="justify text-muted text-center"> <a class="granite-red" href="#bookings">Booking?</a> Have an enquiry or would like to give us feedback?<br>Fill out the form below or contact our team <a class="granite-red" -->
+      <!-- > Lourdes@gmail.com</a>  </p>   -->
+
+      <form class="contact-translate-group">
+        <div class="form-group pt-2 pl-1">
+          <label for="fullName" id="nameInput">Name</label>
+          <input type="text" class="form-control" id="fullName" name="fullName">
+        </div>
+
+        <div class="form-group pl-1">
+          <label for="email" id="emailInput"> Email</label>
+          <input type="email" class="form-control" id="email" name="email">
+        </div>
+
+        <div class="form-group pl-1">
+          <label for="message" id="messageInput">Message</label>
+          <textarea class="form-control" id="message" rows="5" name="message"></textarea>
+        </div>
+        <div class="row ">
+
+          <div class="col-md-3 offset-md-0 ">
+            <button type="submit" id="sendButton" href="https://gmail.com" class="btn btn-danger granite-red">Send</button>
+
+          </div>
+
+        </div>
+      </form>
+    </div>
+
+    <div class="row">
+      <div style="margin-top: 80px;">
+        <h4>Bookings</h4>
+        <p><a href="https://gmail.com"> lourdesrosalesmusic@gmail.com </a> </p>
+      </div>
+    </div>
+    <!--col-->
+  </div><!--row-->
+</div>
+
+
+.form-title{
+	font-weight: bold;
+}
+
+.form-group label{
+	font-size: 11px;
+	font-weight: bold;
+	padding-left: 5px;
+	color: #828282;
+}
+.form-control{
+	border: none; /*1px solid #f4f4f4;*/
+	border-radius: 20px;
+	background: rgba(236, 209, 207, 0.075);
+	box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+.btn {
+	box-shadow: none;
+}
+
+.form-control:focus {
+    color: #495057;
+    border-color: #fff !important;
+    outline: 0;
+    box-shadow: 0 1px 1px 1px #75012E ;
+}

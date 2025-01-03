@@ -188,7 +188,7 @@ var data = {
         "navbar": {
             "aboutus": "About Us",
             "services": "Services",
-            "multimedia": "Galería",
+            "multimedia": "Multimedia",
             "contact": "Contact",
         },
         "footer-slogan" : {
@@ -241,7 +241,7 @@ var data = {
         "navbar": {
             "aboutus": "Bio",
             "services": "Servicios",
-            "multimedia": "Multimedia",
+            "multimedia": "Galería",
             "contact": "Contactar",
 
         },

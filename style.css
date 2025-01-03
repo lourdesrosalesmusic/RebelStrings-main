@@ -101,6 +101,15 @@ hr {
   height: 30em;
 }
 
+.navbar {
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
 
 .fab {
   color: #d09412;

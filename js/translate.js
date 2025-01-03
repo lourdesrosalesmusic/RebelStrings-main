@@ -47,22 +47,42 @@ function sendMail() {
 
 
 
+// Function to set a cookie
+function setCookie(name, value, days) {
+    const date = new Date();
+    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000)); // Expiry time in days
+    const expires = "expires=" + date.toUTCString();
+    document.cookie = name + "=" + value + ";" + expires + ";path=/";
+}
+
+// Function to get a cookie value by its name
+function getCookie(name) {
+    const nameEQ = name + "=";
+    const ca = document.cookie.split(';');
+    for (let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+        if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+    }
+    return null;
+}
+
+// Function to delete a cookie by its name
+function eraseCookie(name) {
+    document.cookie = name + "=; Max-Age=-99999999;";
+}
 
 // Function to update content based on selected language
 function updateLanguage(language) {
-
     var langData = data[language]; // Get the corresponding language data
     var page = document.body.getAttribute('page'); // Get the current page from the body attribute
 
-
-    //Needed to let the form alert success what language to put have the message in
-    if (language == "english") {
+    // Needed to let the form alert success what language to use for the message
+    if (language === "english") {
         document.body.setAttribute("lang", "en");
     } else {
         document.body.setAttribute("lang", "es");  // Set to Spanish
     }
-
-    //console.log(langData);
 
     // Check if the page has data in the selected language
     if (langData[page]) {
@@ -79,22 +99,16 @@ function updateLanguage(language) {
         console.warn('No translation data available for page: ' + page);
     }
 
-    // var navbarData = langData['navbar'];
-    // for (var navId in navbarData) {
-    //     var navElement = document.getElementById(navId);
-    //     if (navElement) {
-    //         navElement.innerText = navbarData[navId]; // Update navbar link text
-    //     }
-    // }
-
+    // Update additional sections like navbar and footer using explicitUpdate function
     explicitUpdate('navbar', langData);
     explicitUpdate("footer-slogan", langData);
 
-
+    // Set a cookie to remember the selected language
+    setCookie("language", language, 30); // Save the language choice for 30 days
 }
 
-
-function explicitUpdate(section, langData){
+// Function to update a specific section of the page (navbar, footer, etc.)
+function explicitUpdate(section, langData) {
     var sectionData = langData[section];
     for (var itemId in sectionData) {
         var navElement = document.getElementById(itemId);
@@ -103,6 +117,17 @@ function explicitUpdate(section, langData){
         }
     }
 }
+
+// Check the cookie on page load and update the language accordingly
+window.onload = function () {
+    var storedLang = getCookie("language"); // Get the stored language from the cookie
+    if (storedLang) {
+        updateLanguage(storedLang); // Apply the stored language if found
+    } else {
+        // Default to English if no language cookie is found
+        updateLanguage("english");
+    }
+};
 
 // Event listener for the English button
 document.getElementById("englishBtn").addEventListener("click", function () {
@@ -113,6 +138,7 @@ document.getElementById("englishBtn").addEventListener("click", function () {
 document.getElementById("spanishBtn").addEventListener("click", function () {
     updateLanguage("spanish");
 });
+
 
 
 var data = {

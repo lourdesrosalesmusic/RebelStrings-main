@@ -2,31 +2,13 @@ suggestions:
 
 
 TODO:
-    button: 
-        bright gold on hover
+    about us mobile image collapse fix
 
-    navbar: 
-        active
+    Fix fonts:
+        slogan font
+        navbar font
     
-    Footer at each page
-        copyright text is gold
-        Icons right color
-
-    services:
-        image maxheight
-
-    contact: 
-        on click boxes should be gold not red
-
-
-    about us
-        jumbotron navbar space between
-
-    
-    Fix fonts
-    
-    index:
-        slogan too low under
+    Language Cookie
     
    
 

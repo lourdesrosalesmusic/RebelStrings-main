@@ -93,7 +93,10 @@ hr {
 } */
 
 
-
+#slogan {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1), 0 0 25px rgba(0,0,0, 0.2); /* Adds a subtle shadow */
+  letter-spacing: 1px;
+}
 .jumbotron {
   height: 30em;
 }

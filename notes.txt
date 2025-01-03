@@ -1,0 +1,11 @@
+suggestions:
+
+No video links
+Multimedia: 
+    Switched the order of:
+             "p1": "Discover photos, and video samples that showcase our dynamic performances and the magic we bring to every high-end event.",
+            "heading1": "PHOTOS/VIDEOS",
+            "p2": "Stay tuned for the latest news and updates by following us on social media!",
+
+Contact form 
+    Remove/Considerably reduce text

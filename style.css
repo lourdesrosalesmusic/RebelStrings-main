@@ -12,6 +12,10 @@ body {
   padding: 0;
 }
 
+.container { 
+  margin-top: 2%;
+}
+
 .bg-dark{
   background-color: #080808 !important;
 }

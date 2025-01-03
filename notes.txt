@@ -1,5 +1,7 @@
 suggestions:
 
+
+
 youtube links:
     https://youtu.be/tgJ5Jm_4Ftg
 
@@ -17,10 +19,10 @@ Contact:
     Type
         Wedding
         Corporate
-        
+
     Event Location
     Date
-    Venue Address
+
 
 No video links
 Multimedia: 

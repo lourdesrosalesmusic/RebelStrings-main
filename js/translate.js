@@ -1,6 +1,5 @@
-
 var formSuccessMessageEnglish = "Thank you for filling out the form! We will be reaching out back to you very soon with more information.";
-var fromSuccessMessageSpanish = "¡Muchas gracias por rellenar nuestro formulario! Nos pondremos en contacto con más información a la mayor brevedad.";
+var formSuccessMessageSpanish = "¡Muchas gracias por rellenar nuestro formulario! Nos pondremos en contacto con más información a la mayor brevedad.";
 
 
 function sendMail() {
@@ -11,23 +10,45 @@ function sendMail() {
         message: document.getElementById("message").value,
     };
 
+    var params = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        location: document.getElementById("location").value,
+        message: document.getElementById("message").value,
+        event_type: document.getElementById("event-type").value,
+        event_date: document.getElementById("date").value
+    };
+
 
     var currentLanguage = document.body.getAttribute('lang'); // Assuming lang attribute is used to store the language (e.g., 'en' or 'es')
 
 
+
+    //moi
+    //zWIw_YHvGUyZFJIPr
+    // const serviceID = "service_j4zfgbl";
+    // const templateID = "template_in5h2cm";
+
+    //Rebel 
+    //pk uszj9LtkA0ytQ8LF2
     const serviceID = "service_9cbzpys";
     const templateID = "template_krz074s";
 
     emailjs.send(serviceID, templateID, params)
         .then(res => {
+            // Reset dropdown to default
             document.getElementById("name").value = "";
             document.getElementById("email").value = "";
+            document.getElementById("location").value = "";
+            document.getElementById("event-type").value = "";
+            document.getElementById("date").value = "mm/dd/yyyy";
+
             document.getElementById("message").value = "";
             console.log(res);
 
 
             if (currentLanguage === "es") {
-                alert("Your message sent successfully!!")
+                
                 // Spanish message
                 alert(formSuccessMessageSpanish);
             } else {
@@ -174,12 +195,21 @@ var data = {
 
         "contact": {
             "heading1": "Contact Form",
-            "p1": "You now have a better understanding of What and How REBEL STRINGS can help you create a blasting event. Now it is your time to provide us with some information so we can personalize your event and make it memorable together.",
-            "p2": "Please, fill the following form with as much detail as you can provide. Any information given will be used to provide you with a better personalized answer, the more we know about you and your event, the better we can tailor our approach.",
+            "p1": "Please, fill the following form with as much detail as you can provide. Any information given will be used to provide you with a better personalized answer, the more we know about you and your event, the better we can tailor our approach.",
             "name-form": "Name",
             "email-form": "Email",
             "message-form": "Message",
-            "submit-form"  : "Submit",
+            "submit-form": "Submit",
+
+            "date-label" : "Preferred Date",
+            "location-form" : "Location",
+            "dropdown-label" : "Event Type",
+            "option-1" : "Wedding",
+            "option-2" : "Birthday",
+            "option-3" : "Corporate Event",
+            "option-4" : "Nightlife(Club/Lounge/Restaurant)",
+            "option-5" : "General Inquiry",
+            
         },
 
         "index": {
@@ -191,9 +221,9 @@ var data = {
             "multimedia": "Multimedia",
             "contact": "Contact",
         },
-        "footer-slogan" : {
+        "footer-slogan": {
             "slogan": "MAKE IT MEMORABLE | MAKE IT REBEL",
-            "book-now" : "Book Now",
+            "book-now": "Book Now",
         }
 
     },
@@ -227,13 +257,23 @@ var data = {
         },
 
         "contact": {
-            "heading1" : "Contáctanos",
-            "p1" : "",
-            "p2" : "Si has hecho click en esta pestaña es porque quieres ponerte en contacto conmigo. Así que si tienes preguntas, quieres saber un poquito más sobre mí o quieres contar conmigo para algún evento, no dudes en escribirme al siguiente email. Estaré encantada de atender tu consulta.",
+            "heading1": "Contáctanos",
+            "p1": "Si has hecho click en esta pestaña es porque quieres ponerte en contacto conmigo. Así que si tienes preguntas, quieres saber un poquito más sobre mí o quieres contar conmigo para algún evento, no dudes en escribirme al siguiente email. Estaré encantada de atender tu consulta.",
             "name-form": "Nombre",
             "email-form": "Correo",
             "message-form": "Mensaje",
-            "submit-form" : "Enviar"
+            "submit-form": "Enviar",
+
+
+            "date-label" : "Fecha",
+            "location-form" : "Ubicación",
+            "dropdown-label" : "Tipo de Evento",
+            "option-1" : "Boda",
+            "option-2" : "Cumpleaños",
+            "option-3" : "Evento Empresa",
+            "option-4" : "Nightlife(Club/Lounge/Restaurant)",
+            "option-5" : "Otro",
+            
         },
         "index": {
             "exploreButton": "Explorar"
@@ -245,9 +285,9 @@ var data = {
             "contact": "Contactar",
 
         },
-        "footer-slogan" : {
+        "footer-slogan": {
             "slogan": "MAKE IT MEMORABLE | MAKE IT REBEL",
-            "book-now" : "Reservar Ahora",
+            "book-now": "Reservar Ahora",
         }
 
 

@@ -2,7 +2,7 @@
 	font-family: Arial, Helvetica, sans-serif;
 } */
 
-.container{
+.container {
 	padding: 20px 20px 20px 20px !important;
 
 }
@@ -16,21 +16,23 @@
 
 
 
-.form-title{
+.form-title {
 	font-weight: bold;
 }
 
-.form-group label{
+.form-group label {
 	font-size: 11px;
 	font-weight: bold;
 	padding-left: 5px;
 	color: #828282;
 }
-.form-control{
-	border: none; /*1px solid #f4f4f4;*/
+
+.form-control {
+	border: none;
+	/*1px solid #f4f4f4;*/
 	border-radius: 20px;
 	background: rgba(236, 209, 207, 0.075);
-	box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.2);
+	box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 .btn {
@@ -38,18 +40,66 @@
 }
 
 .form-control:focus {
-    color: #495057;
-    border-color: #fff !important;
-    outline: 0;
-    box-shadow: 0 1px 1px 1px #d09412 ;
+	color: #495057;
+	border-color: #fff !important;
+	outline: 0;
+	box-shadow: 0 1px 1px 1px #d09412;
 }
 
 
 .bg-dark {
-	background-color: #080808 !important;
+	background-color: #5a5959 !important;
 }
 
 label {
 	font-size: 1.1em !important;
+}
+
+
+.dropdown-arrow-wrapper {
+	position: relative;
+}
+
+.dropdown-arrow {
+	appearance: none;
+	background: white url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6"><path fill="%235a5959" d="M5 6L0 0h10z"/></svg>') no-repeat right 10px center;
+	background-size: 10px 6px;
+	padding-right: 30px;
+}
+
+
+/* Highlight weekends in gold */
+.flatpickr-day.weekend {
+	background-color: gold !important;
+	color: black !important;
+	/* Adjust text color for contrast */
+}
+
+/* Remove the border around the calendar */
+.flatpickr-calendar {
+	border: none !important;
+	background-color: white;
+	/* Ensure the calendar has a white background */
+}
+
+/* Customize the active day */
+.flatpickr-day.selected {
+	background: #d09412 !important;
+	color: white !important;
+
+}
+
+/* Hover effect for days */
+.flatpickr-day:hover {
+	background: lightgoldenrodyellow !important;
+}
+
+.flatpickr-day.selected:focus {
+	outline: none !important;
+	box-shadow: none !important;
+}
+
+.form-control[readonly] {
+	background-color: white !important;
 }
 

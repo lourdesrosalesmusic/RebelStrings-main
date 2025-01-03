@@ -1,172 +1,106 @@
-<!DOCTYPE html>
-<html lang="en">
+<div class="container flex-grow-1" style="margin-top: 50px;">
+  <div class="row" style="display: flex; justify-content: center;">
+    <div class="col-10">
+      <h1 id="heading1" class="text-center">Contact Form</h1>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <p id="p1" class="" style="font-size: small;">
+        Please, fill the following form with as much detail as you can provide. Any information given will be used to provide you with a better personalized answer, the more we know about you and your event, the better we can tailor our approach.
+      </p>
 
+      <div class="form-group">
+        <h5 id="name-form" for="name">Name</h5>
+        <input type="text" class="form-control" id="name" placeholder="" />
+      </div>
 
-  <!-- MDB icon -->
-  <link rel="icon" href="img/tab-logo.png" type="image/x-icon" />
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-  <!-- Google Fonts Roboto -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
-  <!-- MDB -->
-  <link rel="stylesheet" href="css/mdb.min.css" />
+      <div class="form-group">
+        <h5 id="email-form" for="email">Email</h5>
+        <input type="email" class="form-control" id="email" placeholder="" />
+      </div>
 
-
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="./home-styles.css">
-
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
-
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-
-
-  <title>Rebel Strings</title>
-</head>
-
-<body page="index">
-
-  <!-- Navbar -->
-  <header>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark " style="background-color:#000000;">
-      <!-- Container wrapper -->
-      <div class="container-fluid">
-
-        <!-- Navbar brand -->
-        <a class="navbar-brand" href="./index.html">
-          <img height="30" src="./img/navbar-logo.png" alt="">
-        </a>
-
-        <!-- Toggle button -->
-        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-          data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <i class="fas fa-bars"></i>
-        </button>
-
-        <!-- Collapsible wrapper -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-            <!-- Link -->
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li> -->
-
-          </ul>
-
-          <!-- Icons d-flex flex-row me-1 -->
-
-          <!-- navbar-nav d-flex me-auto mb-2 mb-lg-0 -->
-          <ul class="navbar-nav d-flex margin-right mb-2 mb-lg-0">
-            <li class="nav-item me-3 me-lg-0 align-right ">
-              <a class="nav-link text-end" href="about.html">About Us</i></a>
-            </li>
-            <li class="nav-item me-3 me-lg-0 align-right ">
-              <a class="nav-link text-end" href="services.html">Services</i></a>
-            </li>
-            <li class="nav-item me-3 me-lg-0">
-              <a class="nav-link text-end" href="multimedia.html">Multimedia</i></a>
-            </li>
-
-            <li class="nav-item me-3 me-lg-0">
-              <a class="nav-link text-end" id="contact" href="./contact.html">Contact</i></a>
-            </li>
-            <ul class="navbar-nav langWrap">
-              <li class="nav-item me-3 me-lg-0">
-                <a class="nav-link text-end lang" id="spanishBtn" language="spanish"><img src="./img/spain_icon.png"
-                    height="20" alt=""> </i></a>
-              </li>
-              <li class="nav-item me-3 me-lg-0 ">
-                <a class="nav-link text-end lang active " id="englishBtn" language="english"><img
-                    src="./img/american_icon.png" height="20" alt=""> </i></a>
-              </li>
-            </ul>
-
-          </ul>
-
+      <div class="form-group">
+        <h5 id="dropdown-label" for="dropdown">Reason for Contact</h5>
+        <div class="dropdown-arrow-wrapper">
+          <select class="form-control dropdown-arrow" id="dropdown">
+            <option value="General Inquiry">General Inquiry</option>
+            <option value="Event Planning">Event Planning</option>
+            <option value="Feedback">Feedback</option>
+            <option value="Other">Other</option>
+          </select>
         </div>
       </div>
-      <!-- Container wrapper -->
-    </nav>
-  </header>
-  <!-- Navbar -->
 
+      <div class="form-group">
+        <h5 id="date-label" for="date">Preferred Date</h5>
+        <input type="text" class="form-control" id="date" placeholder="Select a date" />
+      </div>
 
-  <!-- Jumbotron -->
-  <main>
+      <div class="form-group">
+        <h5 id="message-form" for="message">Message</h5>
+        <textarea class="form-control" id="message" rows="3"></textarea>
+      </div>
 
-
-    <video style="height: 60vh" autoplay muted loop id="bg-video">
-      <source src="./resources/LANDING VIDEO LOOP.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-
-
-
-
-    <div class="main-container">
-
-      <h1 id="slogan" class="mb-3 title-font">MAKE IT MEMORABLE | MAKE IT REBEL</h1>
-      <!--img id="logo-img" src="./img/Lourdes-Rosales-LR-white-nobg.png" alt="">  -->
-      <a id="book-now" class="btn btn-lg btn-gold" href="contact.html" role="button" id="explore-btn">Book Now</a>
-
-
-
-
+      <button id="submit-form" class="btn btn-gold" onclick="sendMail()">Submit</button>
     </div>
-    <!-- Section: Social media -->
+  </div>
+</div>
 
-    <section class="row " style="width: 100%; min-height: 70px; margin-bottom: 0.25rem;">
-      <!-- Text Section -->
-      <div class="col-md-8 d-flex justify-content-center text-gold" style="display: flex; align-items: center;">
-         <p style="padding-top: 20px ;">
-          Rebel Strings LLC &#169; All rights Reserved
-         </p>
-      </div>
-    
-      <!-- Icons Section -->
-      <div class="col-12 col-md-4 d-flex justify-content-center justify-content-md-start align-items-center  flex-md-row">
-        <!-- Facebook -->
-        <a class="btn btn-lg btn-floating m-1" href="https://www.facebook.com/profile.php?id=61565660922657" target="_blank" role="button">
-          <i class="fab fa-facebook-f fa-lg"></i>
-        </a>
-    
-        <!-- Instagram -->
-        <a class="btn btn-lg btn-floating m-1" href="https://www.instagram.com/rebelstrings" target="_blank" role="button">
-          <i class="fab fa-instagram fa-lg"></i>
-        </a>
-    
-        <!-- YouTube -->
-        <a class="btn btn-lg btn-floating m-1" href="https://www.youtube.com/@RebelStringsEvents" target="_blank" role="button">
-          <i class="fab fa-youtube fa-lg"></i>
-        </a>
-      </div>
-    </section>
-    
-  </main>
-  <!-- Jumbotron -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  flatpickr("#date", {
+    dateFormat: "Y-m-d",
+    altInput: true,
+    altFormat: "F j, Y",
+    weekNumbers: true,
+    disableMobile: true,
+    highlight: [
+      {
+        highlight: (date) => date.getDay() === 0 || date.getDay() === 6,
+        cssClass: "highlight-weekend"
+      }
+    ],
+    onReady: function () {
+      const weekendHighlightCSS = document.createElement("style");
+      weekendHighlightCSS.innerHTML = ".highlight-weekend { background-color: gold !important; }";
+      document.head.appendChild(weekendHighlightCSS);
+    }
+  });
+});
 
+function sendMail() {
+  var params = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    message: document.getElementById("message").value,
+    reason: document.getElementById("dropdown").value,
+    date: document.getElementById("date").value
+  };
 
+  var currentLanguage = document.body.getAttribute('lang'); // Assuming lang attribute is used to store the language (e.g., 'en' or 'es')
 
+  const serviceID = "service_9cbzpys";
+  const templateID = "template_krz074s";
 
-  <!-- footer -->
-  <!-- footer -->
+  emailjs.send(serviceID, templateID, params)
+    .then(res => {
+      document.getElementById("name").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("message").value = "";
+      document.getElementById("dropdown").value = "General Inquiry"; // Reset dropdown to default
+      document.getElementById("date").value = ""; // Reset date
 
-  <!-- MDB -->
-  <script type="text/javascript" src="js/mdb.min.js"></script>
-  <!-- Custom scripts -->
-  <script type="text/javascript"></script>
-  <script src="./js/translate.js"></script>
-</body>
+      console.log(res);
 
-</html>
+      if (currentLanguage === "es") {
+        alert("¡Su mensaje se envió con éxito!");
+      } else {
+        alert("Your message was sent successfully!");
+      }
+    })
+    .catch(err => {
+      console.log(err);
+      alert("There was an error sending your message. Please try again.");
+    });
+}
+</script>

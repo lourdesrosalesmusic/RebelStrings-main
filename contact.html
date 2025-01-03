@@ -17,9 +17,13 @@
   <!-- MDB -->
   <link rel="stylesheet" href="css/mdb.min.css" />
 
+
+  <link rel="stylesheet" href="bootstrap.bundle.min.js / bootstrap.bundle.js" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
 
 
@@ -29,21 +33,18 @@
   <link rel="stylesheet" href="./contact-style.css">
 
 
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init("uszj9LtkA0ytQ8LF2");
-      })();
-    </script>
-  
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("uszj9LtkA0ytQ8LF2");
+    })();
+  </script>
+
 
   <title>Rebel Strings</title>
 </head>
 
-<body class="d-flex flex-column" style="min-height: 100vh;"lang="en" page="contact">
+<body class="d-flex flex-column" style="min-height: 100vh;" lang="en" page="contact">
 
   <!-- Navbar -->
   <header>
@@ -85,16 +86,18 @@
             <li class="nav-item me-3 me-lg-0">
               <a class="nav-link text-end" href="multimedia.html">Multimedia</i></a>
             </li>
-          
+
             <li class="nav-item me-3 me-lg-0">
               <a class="nav-link text-end active" id="contact" href="./contact.html">Contact</i></a>
             </li>
             <ul class="navbar-nav langWrap">
-              <li class="nav-item me-3 me-lg-0" >
-                <a class="nav-link text-end lang"  id="spanishBtn" ><img src="./img/spain_icon.png" height="20" alt=""> </i></a>
+              <li class="nav-item me-3 me-lg-0">
+                <a class="nav-link text-end lang" id="spanishBtn"><img src="./img/spain_icon.png" height="20" alt="">
+                  </i></a>
               </li>
-              <li class="nav-item me-3 me-lg-0 " >
-                <a class="nav-link text-end lang active " id="englishBtn"><img src="./img/american_icon.png" height="20" alt=""> </i></a>
+              <li class="nav-item me-3 me-lg-0 ">
+                <a class="nav-link text-end lang active " id="englishBtn"><img src="./img/american_icon.png" height="20"
+                    alt=""> </i></a>
               </li>
             </ul>
 
@@ -123,64 +126,101 @@
 
   <div class="container flex-grow-1" style="margin-top: 50px;">
     <div class="row" style="display: flex; justify-content: center;">
-    <div class="col-10  ">
-      <h1 id="heading1" class="text-center">Contact Form</h1>
-      <p id="p1" class="" style="font-size: small;">
-        You now have a better understanding of What and How REBEL STRINGS can help you create a blasting event. Now it is your time to provide us with some information so we can personalize your event and make it memorable together.
-      </p>
-      <p id="p2" class="" style="font-size: small;">
-        Please, fill the following form with as much detail as you can provide. Any information given will be used to provide you with a better personalized answer, the more we know about you and your event, the better we can tailor our approach.
-      </p>
-      
-      <div class="form-group">
-        <h5 id="name-form"for="name">Name</h5>
-        <input
-          type="text"
-          class="form-control"
-          id="name"
-          placeholder=""
-        />
+      <div class="col-10  ">
+        <h1 id="heading1" class="text-center">Contact Form</h1>
+
+        <p id="p1" class="" style="font-size: small;">
+          Please, fill the following form with as much detail as you can provide. Any information given will be used to
+          provide you with a better personalized answer, the more we know about you and your event, the better we can
+          tailor our approach.
+        </p>
+
+        <div class="form-group">
+          <h5 id="name-form" for="name">Name</h5>
+          <input type="text" class="form-control" id="name" placeholder="" />
+        </div>
+        <div class="form-group">
+          <h5 id="email-form" for="email">Email</h5>
+          <input type="email" class="form-control" id="email" placeholder="" />
+        </div>
+        <div class="form-group">
+          <h5 id="location-form" for="location">Location</h5>
+          <input type="text" class="form-control" id="location" placeholder="" />
+        </div>
+
+        <div style="display: flex; flex-direction: row; flex-wrap: wrap;">
+          <!-- <div class="form-group col-md-4 " style="margin-left: 0; padding-left: 0;">
+            <h5 id="date-label" for="event-date">Preferred Date</h5>
+            <input type="date" class="form-control" id="event-date" />
+          </div> -->
+
+          <div class="form-group col-md-4 " style="margin-left: 0; padding-left: 0;">
+            <div class="form-group">
+              <h5 id="date-label" for="date">Preferred Date</h5>
+              <input type="text" readonly class="form-control" id="date" placeholder="mm/dd/yyyy"
+              />
+            </div>
+          </div>
+
+
+          <div class="form-group col-md-4" style="padding-left: 0;">
+            <h5 id="dropdown-label" for="event-type">Event Type</h5>
+
+            <div class="dropdown-arrow-wrapper">
+              <select class="form-control dropdown-arrow" id="event-type">
+
+                <option id="option-1" value="Wedding">Wedding</option>
+                <option id="option-2" value="Birthday">Birthday</option>
+                <option id="option-3" value="Corporate Event">Corporate Event</option>
+                <option id="option-4" value="Nightlife(Club/Lounge/Restaurant)">Nightlife(Club/Lounge/Restaurant)</option>
+                <option id="option-5" value="General Inquiry">General Inquiry</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="form-group ">
+          <h5 id="message-form" for="message">Message</h5>
+          <textarea class="form-control" id="message" rows="3"></textarea>
+
+        </div>
+        <button id="submit-form" class="btn btn-gold" onclick="sendMail()">Submit</button>
       </div>
-      <div class="form-group">
-        <h5 id="email-form" for="email">Email</h5>
-        <input
-          type="email"
-          class="form-control"
-          id="email"
-          placeholder=""
-        />
-      </div>
-      <div class="form-group">
-        <h5 id="message-form" for="message">Message</h5>
-        <textarea class="form-control" id="message" rows="3"></textarea>
-      </div>
-      <button id="submit-form" class="btn btn-gold" onclick="sendMail()">Submit</button>
     </div>
-  </div>
+
+
+    <div class="row" style="display: flex; justify-content: center;">
+
+
+    </div>
 
   </div>
   <section class="row nonintro-footer">
     <!-- Text Section -->
     <div class="col-md-8 d-flex justify-content-center text-gold" style="display: flex; align-items: center;">
-       <p style="padding-top: 20px ;">
+      <p style="padding-top: 20px ;">
         Rebel Strings LLC &#169; All rights Reserved
-       </p>
+      </p>
     </div>
-  
+
     <!-- Icons Section -->
     <div class="col-12 col-md-4 d-flex justify-content-center justify-content-md-start align-items-center  flex-md-row">
       <!-- Facebook -->
-      <a class="btn btn-lg btn-floating m-1" href="https://www.facebook.com/profile.php?id=61565660922657" target="_blank" role="button">
+      <a class="btn btn-lg btn-floating m-1" href="https://www.facebook.com/profile.php?id=61565660922657"
+        target="_blank" role="button">
         <i class="fab fa-facebook-f fa-lg"></i>
       </a>
-  
+
       <!-- Instagram -->
-      <a class="btn btn-lg btn-floating m-1" href="https://www.instagram.com/rebelstrings" target="_blank" role="button">
+      <a class="btn btn-lg btn-floating m-1" href="https://www.instagram.com/rebelstrings" target="_blank"
+        role="button">
         <i class="fab fa-instagram fa-lg"></i>
       </a>
-  
+
       <!-- YouTube -->
-      <a class="btn btn-lg btn-floating m-1" href="https://www.youtube.com/@RebelStringsEvents" target="_blank" role="button">
+      <a class="btn btn-lg btn-floating m-1" href="https://www.youtube.com/@RebelStringsEvents" target="_blank"
+        role="button">
         <i class="fab fa-youtube fa-lg"></i>
       </a>
     </div>
@@ -191,6 +231,34 @@
   <!-- Custom scripts -->
   <script type="text/javascript"></script>
   <script src="./js/translate.js"></script>
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <!-- <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/confetti.css"> -->
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      flatpickr("#date", {
+        dateFormat: "Y-m-d",
+        altInput: true,
+        altFormat: "F j, Y",
+        weekNumbers: false,
+        disableMobile: true,
+        highlight: [
+          {
+            highlight: (date) => date.getDay() === 0 || date.getDay() === 6,
+            cssClass: "highlight-weekend"
+          }
+        ],
+        onReady: function () {
+          const weekendHighlightCSS = document.createElement("style");
+          weekendHighlightCSS.innerHTML = ".highlight-weekend { background-color: gold !important; }";
+          document.head.appendChild(weekendHighlightCSS);
+        }
+      });
+    });
+  </script>
+
 </body>
 
 </html>

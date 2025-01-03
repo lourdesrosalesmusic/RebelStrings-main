@@ -5,8 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 
   <!-- MDB icon -->
   <link rel="icon" href="img/tab-logo.png" type="image/x-icon" />
@@ -18,26 +17,23 @@
   <link rel="stylesheet" href="css/mdb.min.css" />
 
 
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="./contact-style.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./home-styles.css">
 
-  <script src="./form.js"></script>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
 
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init("zWIw_YHvGUyZFJIPr");
-      })();
-    </script>
-  
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+
 
   <title>Rebel Strings</title>
 </head>
 
-<body class="bg-dark text-light " page="contact">
+<body page="index">
 
   <!-- Navbar -->
   <header>
@@ -63,133 +59,107 @@
 
             <!-- Link -->
             <!-- <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li> -->
+              <a class="nav-link" href="#">Link</a>
+            </li> -->
 
           </ul>
 
           <!-- Icons d-flex flex-row me-1 -->
+
+          <!-- navbar-nav d-flex me-auto mb-2 mb-lg-0 -->
           <ul class="navbar-nav d-flex margin-right mb-2 mb-lg-0">
             <li class="nav-item me-3 me-lg-0 align-right ">
-              <a class="nav-link text-end" href="bio.html">Bio</i></a>
+              <a class="nav-link text-end" href="about.html">About Us</i></a>
+            </li>
+            <li class="nav-item me-3 me-lg-0 align-right ">
+              <a class="nav-link text-end" href="services.html">Services</i></a>
             </li>
             <li class="nav-item me-3 me-lg-0">
               <a class="nav-link text-end" href="multimedia.html">Multimedia</i></a>
             </li>
+
             <li class="nav-item me-3 me-lg-0">
-              <a class="nav-link text-end" href="https://www.scifiensemble.com/" target="_blank"> SciFi Ensemble</i></a>
-            </li>
-            <li class="nav-item me-3 me-lg-0">
-              <a class="nav-link text-end" id="contact" href="contact.html">Contact</i></a>
+              <a class="nav-link text-end" id="contact" href="./contact.html">Contact</i></a>
             </li>
             <ul class="navbar-nav langWrap">
               <li class="nav-item me-3 me-lg-0">
-                <a class="nav-link text-end lang" language="spanish"><img src="./img/spain_icon.png" height="20" alt="">
-                  </i></a>
-              </li>
-              <li class="nav-item me-3 me-lg-0 ">
-                <a class="nav-link text-end lang active " language="english"><img src="./img/american_icon.png"
+                <a class="nav-link text-end lang" id="spanishBtn" language="spanish"><img src="./img/spain_icon.png"
                     height="20" alt=""> </i></a>
               </li>
+              <li class="nav-item me-3 me-lg-0 ">
+                <a class="nav-link text-end lang active " id="englishBtn" language="english"><img
+                    src="./img/american_icon.png" height="20" alt=""> </i></a>
+              </li>
             </ul>
+
           </ul>
 
         </div>
       </div>
       <!-- Container wrapper -->
     </nav>
-    <!-- Background image -->
-    <div class="p-5 text-center bg-image"
-      style="background-image: url('./img/LR-Multemedia-3.jpg');height: 400px;margin-top: 58px;">
-      <!-- make rgba(0, 0, 0, 0.6) for opacity-->
-      <div class="mask" style="background-color: rgba(0, 0, 0, 0.0);">
-        <div class="d-flex justify-content-center align-items-center h-100">
-          <div class="text-white">
-            <!-- <h1 class="mb-3">Heading</h1>
-      <h4 class="mb-3">Subheading</h4>
-      <a class="btn btn-outline-light btn-lg" href="#!" role="button">Call to action</a> -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Background image -->
   </header>
   <!-- Navbar -->
 
 
-  <div class="container">
-    <div class="row" style="display: flex; justify-content: center;">
-    <div class="col-10 ">
-      <h1>Contact form</h1>
-      <div class="form-group">
-        <h5 for="name">Name</h5>
-        <input
-          type="text"
-          class="form-control"
-          id="name"
-          placeholder="Enter name"
-        />
-      </div>
-      <div class="form-group">
-        <h5 for="email">Email</h5>
-        <input
-          type="email"
-          class="form-control"
-          id="email"
-          placeholder="Enter email"
-        />
-      </div>
-      <div class="form-group">
-        <h5 for="message">Message</h5>
-        <textarea class="form-control" id="message" rows="3"></textarea>
-      </div>
-      <button class="btn btn-primary" onclick="sendMail()">Submit</button>
+  <!-- Jumbotron -->
+  <main>
+
+
+    <video style="height: 60vh" autoplay muted loop id="bg-video">
+      <source src="./resources/LANDING VIDEO LOOP.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+
+
+
+    <div class="main-container">
+
+      <h1 id="slogan" class="mb-3 title-font">MAKE IT MEMORABLE | MAKE IT REBEL</h1>
+      <!--img id="logo-img" src="./img/Lourdes-Rosales-LR-white-nobg.png" alt="">  -->
+      <a id="book-now" class="btn btn-lg btn-gold" href="contact.html" role="button" id="explore-btn">Book Now</a>
+
+
+
+
     </div>
-  </div>
+    <!-- Section: Social media -->
 
-  </div>
-   <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
-<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+    <section class="row " style="width: 100%; min-height: 70px; margin-bottom: 0.25rem;">
+      <!-- Text Section -->
+      <div class="col-md-8 d-flex justify-content-center text-gold" style="display: flex; align-items: center;">
+         <p style="padding-top: 20px ;">
+          Rebel Strings LLC &#169; All rights Reserved
+         </p>
+      </div>
+    
+      <!-- Icons Section -->
+      <div class="col-12 col-md-4 d-flex justify-content-center justify-content-md-start align-items-center  flex-md-row">
+        <!-- Facebook -->
+        <a class="btn btn-lg btn-floating m-1" href="https://www.facebook.com/profile.php?id=61565660922657" target="_blank" role="button">
+          <i class="fab fa-facebook-f fa-lg"></i>
+        </a>
+    
+        <!-- Instagram -->
+        <a class="btn btn-lg btn-floating m-1" href="https://www.instagram.com/rebelstrings" target="_blank" role="button">
+          <i class="fab fa-instagram fa-lg"></i>
+        </a>
+    
+        <!-- YouTube -->
+        <a class="btn btn-lg btn-floating m-1" href="https://www.youtube.com/@RebelStringsEvents" target="_blank" role="button">
+          <i class="fab fa-youtube fa-lg"></i>
+        </a>
+      </div>
+    </section>
+    
+  </main>
+  <!-- Jumbotron -->
 
 
 
-  <!-- footer socials -->
-  <footer class=" text-center text-white">
-    <!-- Grid container -->
-    <div class="container p-4 pb-0">
-      <!-- Section: Social media -->
-      <section class="mb-4">
 
-        <!-- Section: Social media -->
-        <section class="mb-4">
-
-          <!-- Facebook -->
-          <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/lourdesrosalesviola/"
-            target="_blank" role="button"><i class="fab fa-facebook-f"></i></a>
-
-          <!-- Instagram -->
-          <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/lourdesrosalesmusic/"
-            target="_blank" role="button"><i class="fab fa-instagram"></i></a>
-
-          <!-- Twitter -->
-          <a class="btn btn-outline-light btn-floating m-1" href="https://www.youtube.com/@lourdesrosalesmusic"
-            target="_blank" role="button">
-            <i class="fab fa-youtube"></i>
-          </a>
-
-        </section>
-      </section>
-      <!-- Section: Social media -->
-    </div>
-    <!-- Grid container -->
-
-    <!-- Copyright -->
-    <!-- <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    © 2023 Copyright:
-    <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-  </div> -->
-    <!-- Copyright -->
-  </footer>
+  <!-- footer -->
   <!-- footer -->
 
   <!-- MDB -->

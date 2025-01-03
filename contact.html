@@ -37,7 +37,7 @@
   <title>Rebel Strings</title>
 </head>
 
-<body class="" lang="en" page="contact">
+<body class="d-flex flex-column" style="min-height: 100vh;"lang="en" page="contact">
 
   <!-- Navbar -->
   <header>
@@ -81,7 +81,7 @@
             </li>
           
             <li class="nav-item me-3 me-lg-0">
-              <a class="nav-link text-end" id="contact" href="./contact.html">Contact</i></a>
+              <a class="nav-link text-end active" id="contact" href="./contact.html">Contact</i></a>
             </li>
             <ul class="navbar-nav langWrap">
               <li class="nav-item me-3 me-lg-0" >
@@ -115,7 +115,7 @@
   <!-- Navbar -->
 
 
-  <div class="container" style="margin-top: 50px;">
+  <div class="container flex-grow-1" style="margin-top: 50px;">
     <div class="row" style="display: flex; justify-content: center;">
     <div class="col-10  ">
       <h1 id="heading1" class="text-center">Contact Form</h1>
@@ -153,48 +153,32 @@
   </div>
 
   </div>
-   <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
-<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
-
-
-
-  <!-- footer socials -->
-  <footer class=" text-center text-white">
-    <!-- Grid container -->
-    <div class="container p-4 pb-0">
-      <!-- Section: Social media -->
-      <section class="mb-4">
-
-        <!-- Section: Social media -->
-        <section class="mb-4">
-          <!-- Facebook -->
-          <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/profile.php?id=61565660922657"
-          target="_blank" role="button"><i class="fab fa-facebook-f"></i></a>
-
-          <!-- Instagram -->
-          <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/rebelstrings"
-          target="_blank" role="button"><i class="fab fa-instagram"></i></a>
-
-          <!-- Twitter -->
-          <a class="btn btn-outline-light btn-floating m-1" href="https://www.youtube.com/@RebelStringsEvents"
-          target="_blank" role="button">
-          <i class="fab fa-youtube"></i>
-          </a>
-
-        </section>
-      </section>
-      <!-- Section: Social media -->
+  <section class="row nonintro-footer">
+    <!-- Text Section -->
+    <div class="col-md-8 d-flex justify-content-center text-gold" style="display: flex; align-items: center;">
+       <p style="padding-top: 20px ;">
+        Rebel Strings LLC &#169; All rights Reserved
+       </p>
     </div>
-    <!-- Grid container -->
-
-    <!-- Copyright -->
-    <!-- <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    © 2023 Copyright:
-    <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-  </div> -->
-    <!-- Copyright -->
-  </footer>
-  <!-- footer -->
+  
+    <!-- Icons Section -->
+    <div class="col-12 col-md-4 d-flex justify-content-center justify-content-md-start align-items-center  flex-md-row">
+      <!-- Facebook -->
+      <a class="btn btn-lg btn-floating m-1" href="https://www.facebook.com/profile.php?id=61565660922657" target="_blank" role="button">
+        <i class="fab fa-facebook-f fa-lg"></i>
+      </a>
+  
+      <!-- Instagram -->
+      <a class="btn btn-lg btn-floating m-1" href="https://www.instagram.com/rebelstrings" target="_blank" role="button">
+        <i class="fab fa-instagram fa-lg"></i>
+      </a>
+  
+      <!-- YouTube -->
+      <a class="btn btn-lg btn-floating m-1" href="https://www.youtube.com/@RebelStringsEvents" target="_blank" role="button">
+        <i class="fab fa-youtube fa-lg"></i>
+      </a>
+    </div>
+  </section>
 
   <!-- MDB -->
   <script type="text/javascript" src="js/mdb.min.js"></script>

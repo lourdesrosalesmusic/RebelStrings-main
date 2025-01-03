@@ -1,5 +1,21 @@
 suggestions:
 
+
+TODO:
+    Footer at each page
+        copyright text is gold
+        Icons right color
+
+    Fix fonts
+    
+    index:
+        slogan too low under
+    
+    about us
+        jumbotron navbar space between
+
+    
+
 No video links
 Multimedia: 
     Switched the order of:

@@ -147,7 +147,7 @@ var data = {
         },
 
         "contact": {
-            "contact-form": "Contact Form",
+            "heading1": "Contact Form",
             "p1": "You now have a better understanding of What and How REBEL STRINGS can help you create a blasting event. Now it is your time to provide us with some information so we can personalize your event and make it memorable together.",
             "p2": "Please, fill the following form with as much detail as you can provide. Any information given will be used to provide you with a better personalized answer, the more we know about you and your event, the better we can tailor our approach.",
             "name-form": "Name",
@@ -196,12 +196,12 @@ var data = {
         },
         "multimedia": {
             "p1": "Disfruta de esta selección de fotos y videos que muestran nuestro dinamismo y profesionalidad mientras creamos magia en cada evento.",
-            "heading1": "FOTOS/ VIDEOS",
+            "heading1": "FOTOS/VIDEOS",
             "p2": "Si todavía no lo haces, síguenos en nuestras redes sociales para ver más vídeos y fotos, así como noticias e información acerca de nuestros servicios.",
         },
 
         "contact": {
-            "contact-form" : "Contáctanos",
+            "heading1" : "Contáctanos",
             "p1" : "",
             "p2" : "Si has hecho click en esta pestaña es porque quieres ponerte en contacto conmigo. Así que si tienes preguntas, quieres saber un poquito más sobre mí o quieres contar conmigo para algún evento, no dudes en escribirme al siguiente email. Estaré encantada de atender tu consulta.",
             "name-form": "Nombre",

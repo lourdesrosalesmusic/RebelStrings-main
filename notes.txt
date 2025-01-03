@@ -1,5 +1,7 @@
 suggestions:
 
+youtube links:
+    https://youtu.be/tgJ5Jm_4Ftg
 
 TODO:
     about us mobile image collapse fix
@@ -11,6 +13,14 @@ TODO:
     Language Cookie
     
    
+Contact:
+    Type
+        Wedding
+        Corporate
+        
+    Event Location
+    Date
+    Venue Address
 
 No video links
 Multimedia: 

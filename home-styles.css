@@ -210,5 +210,8 @@ laptop displays: mid-size low dpi
   margin-left: 50px;
 } 
 
+#slogan { 
+  text-shadow: 1px 1px 3px rgba(247, 32, 32, 0.1), 0 0 25px rgba(243, 3, 3, 0.425) !important;
+}
 
 

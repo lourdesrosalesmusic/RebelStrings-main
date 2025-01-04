@@ -56,7 +56,7 @@ hr {
 
 .nav-link {
   font-size: 1.1em;
-  color: #d09412 !important;
+  color: #fcb41a !important;
 }
 
 .nav-link:hover {
@@ -93,10 +93,7 @@ hr {
 } */
 
 
-#slogan {
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1), 0 0 25px rgba(0,0,0, 0.2); /* Adds a subtle shadow */
-  letter-spacing: 1px;
-}
+
 .jumbotron {
   height: 30em;
 }
@@ -120,7 +117,7 @@ hr {
 }
 
 .active {
-  color: #fac95f !important;
+  color: #fcc95cf3 !important;
 
 }
 
@@ -195,10 +192,12 @@ hr {
 }
 
 
+#sloagan , h2, h1 {
+  text-shadow: 1px 1px 2px rgb(245, 242, 242), 0 0 2px rgb(221, 220, 220), 0 0 4px rgb(228, 228, 228);
+
+}
 
 #slogan {
-  
-  text-shadow: 1px 1px 1px rgba(0, 0, 0,1 ), 0 0 2px rgba(224, 24, 24, 0.986) !important; /* Adds a subtle shadow */
   letter-spacing: 1px;
   height: 30px;               /* Fixed height */
   line-height: 30px;          /* Vertically center text */

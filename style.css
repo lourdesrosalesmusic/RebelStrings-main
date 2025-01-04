@@ -193,3 +193,34 @@ hr {
     background-position: 0px 5vh ;
   } */
 }
+
+
+
+#slogan {
+  
+  text-shadow: 1px 1px 1px rgba(0, 0, 0,1 ), 0 0 2px rgba(224, 24, 24, 0.986) !important; /* Adds a subtle shadow */
+  letter-spacing: 1px;
+  height: 30px;               /* Fixed height */
+  line-height: 30px;          /* Vertically center text */
+  font-size: 2rem ;            /* Larger font size for desktop */
+  white-space: nowrap;        /* Prevent wrapping */
+  overflow: hidden;           /* Hide overflow */
+  text-align: center;         /* Center text */
+  
+}
+
+/* Mobile responsive styling */
+@media (max-width: 768px) {
+  #slogan {
+    
+    font-size: 1.3rem;        /* Smaller font size for mobile */
+    white-space: normal;      /* Allow text to wrap on small screens */
+  }
+}
+
+/* Additional adjustment for very small screens (e.g. phones) */
+@media (max-width: 480px) {
+  #slogan {
+    font-size: 1.1rem !important;        /* Even smaller font size on very small screens */
+  }
+}

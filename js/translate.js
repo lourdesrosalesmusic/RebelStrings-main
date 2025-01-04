@@ -24,15 +24,15 @@ function sendMail() {
 
 
 
-    //moi
+    //
     //zWIw_YHvGUyZFJIPr
-    const serviceID = "service_j4zfgbl";
-    const templateID = "template_in5h2cm";
+    // const serviceID = "service_j4zfgbl";
+    // const templateID = "template_in5h2cm";
 
     //Rebel 
     //pk uszj9LtkA0ytQ8LF2
-    // const serviceID = "service_9cbzpys";
-    // const templateID = "template_krz074s";
+    const serviceID = "service_9cbzpys";
+    const templateID = "template_krz074s";
 
     emailjs.send(serviceID, templateID, params)
         .then(res => {

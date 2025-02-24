@@ -259,7 +259,7 @@ var data = {
 
         "contact": {
             "heading1": "Contáctanos",
-            "p1": "Si has hecho click en esta pestaña es porque quieres ponerte en contacto conmigo. Así que si tienes preguntas, quieres saber un poquito más sobre mí o quieres contar conmigo para algún evento, no dudes en escribirme al siguiente email. Estaré encantada de atender tu consulta.",
+            "p1": "Si quieres que Rebel Strings forme parte de tu próximo evento, no dudes en contactarnos. Cuanta más información nos proporciones, mejor podremos adaptar nuestros servicios para crear una experiencia única y completamente personalizada.",
             "name-form": "Nombre",
             "email-form": "Correo",
             "message-form": "Mensaje",

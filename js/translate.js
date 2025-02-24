@@ -178,7 +178,7 @@ var data = {
             "heading1": "Electric Strings",
             "p3": "Light up your event with our electrifying Electric Strings! Our dynamic professional violinists bring high energy and versatility, rocking everything from classical to pop. Get ready for a captivating fusion of sound that will leave your audience buzzing with excitement!",
             "heading2": "Electric Strings + DJ Fusion",
-            "p4": "Elevate your event with our Electric Strings + DJ combo! Enjoy the magic of live electric strings paired with a skilled DJ who reads the room, creating the perfect atmosphere for both cocktail hours and lively parties. This interactive experience keeps the energy flowing and your guests engaged, making every moment unforgettable!",
+            "p4": "Elevate your event with our Electric Strings + DJ fusion! Enjoy the magic of live electric strings paired with a skilled DJ who reads the room, creating the perfect atmosphere for both cocktail hours and lively parties. This interactive experience keeps the energy flowing and your guests engaged, making every moment unforgettable!",
             "heading3": "Acoustic Strings",
             "p5": "Transform your event with our amplified Acoustic Strings! Perfect for any genre, our elegant ensembles bring a sophisticated vibe to intimate settings. Experience the magic of classical instruments that will leave your guests spellbound and elevate every moment!",
             "heading4": "Acoustic Strings + Piano",
@@ -196,7 +196,7 @@ var data = {
 
         "contact": {
             "heading1": "Contact Form",
-            "p1": "Please, fill the following form with as much detail as you can provide. Any information given will be used to provide you with a better personalized answer, the more we know about you and your event, the better we can tailor our approach.",
+            "p1": "Please, fill out the following form with as much detail as possible. The more we know about you and your event, the better we can tailor our approach to provide a personalized and accurate experience.",
             "name-form": "Name",
             "email-form": "Email",
             "message-form": "Message",
